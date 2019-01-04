@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #181f2a;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  line-height: 30px;
+}
+
+.container {
+  padding: 70px 20px;
+}
+
+.btn {
+  background-color: #65e2d9;
+  padding: 15px 60px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav .logo {
+  display: block;
+  width: 25%;
+  height: 10%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.nav .links {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav .links .link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.nav .links .link:last-of-type {
+  margin-right: 0;
+}
+
+.intro {
+  background-color: #1c2431;
+}
+
+.intro.container {
+  padding-top: 30px;
+}
+
+.intro .illustration {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.about {
+  text-align: center;
+}
+
+.about.container {
+  padding-top: 0;
+}
+
+.about h2 {
+  line-height: 32px;
+}
+
+.about p {
+  padding: 0 20px;
+}
+
+.services {
+  text-align: center;
+}
+
+.services .service {
+  margin-bottom: 70px;
+  line-height: 25px;
+}
+
+.extra .illustration {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.extra h3 {
+  text-align: center;
+}
+
+.extra .cto {
+  color: #339ecc;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid #339ecc;
+}
+
+.extra .cto .arrow {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.testimonials {
+  background-color: #181f2a;
+}
+
+.testimonials.container {
+  padding: 70px 30px;
+}
+
+.testimonials .quotes {
+  width: 20px;
+}
+
+.testimonials .testimonial {
+  background-color: #202a3c;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.testimonials .testimonial .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonials .testimonial .details .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonials .testimonial .details span {
+  display: block;
+  font-size: 14px;
+}
+
+.testimonials .testimonial .details span:first-of-type {
+  font-weight: bold;
+}
+
+.signup {
+  display: block;
+  text-align: center;
+  position: relative;
+  background-color: #1c2431;
+  width: 80%;
+  margin: auto;
+  margin-bottom: -230px;
+  z-index: 3;
+  border-radius: 10px;
+}
+
+.signup input {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px;
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+}
+
+.signup .btn {
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #0b1523;
+  padding-top: 300px !important;
+}
+
+footer > div {
+  margin-bottom: 50px;
+}
+
+footer .link {
+  color: white;
+  text-decoration: none;
+}
+
+footer .info {
+  margin-bottom: 20px;
+}
+
+footer .info .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer .info .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .info .details img {
+  height: 20px;
+  margin-right: 20px;
+}
+
+footer .info .details span {
+  display: block;
+  text-align: left;
+}
+
+footer .contact {
+  margin-bottom: 70px;
+}
+
+footer .contact .phone {
+  margin-bottom: 20px;
+}
+
+footer .contact .phone img,
+footer .contact .email img {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+footer .links1 a,
+footer .links2 a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer .social {
+  text-align: center;
+}
+
+footer .social i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+footer .social i:last-of-type {
+  margin-right: 0;
+}
+
+footer .social .fa-facebook-f {
+  padding: 10px 13px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+  .container {
+    padding: 70px 50px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .nav .links .link {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  .testimonials.container {
+    padding: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 70px 100px;
+  }
+  .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .services.container {
+    padding: 70px 150px;
+  }
+  .services .service {
+    margin-bottom: 0;
+  }
+  .services .service:nth-of-type(2) {
+    margin-top: -10px;
+  }
+  .services .service p {
+    padding: 0 80px;
+    margin: 0;
+  }
+  .extra {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    grid-column-gap: 30px;
+  }
+  .extra .illustration {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .extra .body {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .extra .body h3 {
+    text-align: left;
+    padding-right: 30px;
+  }
+  .testimonials.container {
+    padding: 70px 100px;
+  }
+  .testimonials .quotes {
+    width: 80px;
+    margin-bottom: -20px;
+    margin-left: -20px;
+  }
+  .testimonials .group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
