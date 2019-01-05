@@ -23,7 +23,8 @@ p {
 }
 
 .btn {
-  background-color: #65e2d9;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), color-stop(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #65e2d9, #339ecc);
   padding: 15px 60px;
   color: white;
   border: none;
@@ -277,17 +278,13 @@ footer .social .fa-facebook-f {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 20px;
+    font-size: 16px;
   }
   .container {
     padding: 70px 50px;
   }
   .btn {
-    font-size: 20px;
-  }
-  .nav .links .link {
-    font-size: 24px;
-    margin-right: 20px;
+    font-size: 16px;
   }
   .testimonials.container {
     padding: 70px;
@@ -296,10 +293,39 @@ footer .social .fa-facebook-f {
 
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
   .container {
     padding: 70px 100px;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+  }
+  .nav .logo {
+    width: 10%;
+    height: 5%;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+  }
+  .nav .links .link {
+    font-size: 16px;
+    margin-right: 25px;
+  }
+  .intro .illustration {
+    width: 60%;
+  }
+  .about.container {
+    padding: 70px 350px;
+  }
+  .about h2 {
+    font-size: 32px;
+    line-height: 50px;
   }
   .services {
     display: -ms-grid;
@@ -328,11 +354,10 @@ footer .social .fa-facebook-f {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-columns: 60% 40%;
         grid-template-columns: 60% 40%;
-    grid-column-gap: 30px;
   }
   .extra .illustration {
-    width: 100%;
-    margin-bottom: 0;
+    width: 80%;
+    margin: 0;
   }
   .extra .body {
     -ms-flex-item-align: center;
@@ -342,6 +367,7 @@ footer .social .fa-facebook-f {
   .extra .body h3 {
     text-align: left;
     padding-right: 30px;
+    font-size: 32px;
   }
   .testimonials.container {
     padding: 70px 100px;
@@ -357,6 +383,39 @@ footer .social .fa-facebook-f {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
+  }
+  .signup {
+    width: 50%;
+    margin-bottom: -150px;
+  }
+  .signup .form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+    margin-top: 20px;
+  }
+  .signup .form .btn {
+    padding: 10px;
+    margin-top: 0;
+    font-size: 14px;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 20% (auto)[3];
+        grid-template-columns: 30% 20% repeat(3, auto);
+    grid-column-gap: 60px;
+  }
+  footer > div {
+    margin-bottom: 0;
+  }
+  footer > div:not(:first-child) {
+    margin-top: 70px;
+  }
+  footer .info,
+  footer .contact {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
