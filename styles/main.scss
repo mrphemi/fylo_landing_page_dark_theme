@@ -83,31 +83,37 @@ p {
    }
    .illustration {
       width: 90%;
-      margin: 0 auto;
+      margin: 40px auto 0;
       display: block;
-      margin-top: 40px;
-      z-index: 1;
+      position: relative;
+      z-index: 2;
    }
 }
 
 // About section
+
+.curve {
+   margin-top: -100px;
+   background-color: $intro-bg;
+   img {
+      width: 100%;
+      height: 100%;
+   }
+   .bg-curvy-mobile {
+      display: block;
+   }
+   .bg-curvy-desktop {
+      display: none;
+   }
+}
+
 .about {
    text-align: center;
+   margin-top: -100px;
    &.container {
       padding-top: 0;
    }
-   // &::before {
-   //    content: "";
-   //    position: absolute;
-   //    display: block;
-   //    top: 0%;
-   //    left: 0;
-   //    width: 100%;
-   //    height: 100%;
-   //    background-image: url("../Assets/images/bg-curvy-mobile.svg");
-   //    background-size: contain;
-   //    background-repeat: no-repeat;
-   // }
+
    h2 {
       line-height: 32px;
    }
@@ -276,7 +282,7 @@ footer {
    }
 }
 
-// Styles For tablets
+// Styles for tablets
 @media screen and (min-width: 768px) {
    body {
       font-size: 16px;
@@ -290,6 +296,12 @@ footer {
       font-size: 16px;
    }
 
+   .nav {
+      .logo {
+         flex-basis: 15%;
+      }
+   }
+
    .testimonials {
       &.container {
          padding: 70px;
@@ -297,7 +309,39 @@ footer {
    }
 }
 
-// Styles For bigger screens (laptops, desktops)
+// Styles for bigger tablets
+@media screen and (min-width: 1024px) {
+   .intro {
+      .illustration {
+         margin: 40px auto;
+      }
+   }
+
+   .curve {
+      margin-top: -5px;
+   }
+
+   .about {
+      margin-top: -520px;
+      &.container {
+         padding: 70px 200px;
+      }
+      h2 {
+         margin-bottom: 30px;
+      }
+      p {
+         padding: 0 80px;
+      }
+   }
+
+   .services {
+      &.container {
+         padding: 70px 150px;
+      }
+   }
+}
+
+// Styles for bigger screens (laptops, desktops)
 @media screen and (min-width: 1200px) {
    body {
       font-size: 14px;
@@ -329,7 +373,17 @@ footer {
       }
    }
 
+   .curve {
+      .bg-curvy-mobile {
+         display: none;
+      }
+      .bg-curvy-desktop {
+         display: block;
+      }
+   }
+
    .about {
+      margin-top: -570px;
       &.container {
          padding: 70px 350px;
       }
@@ -425,5 +479,11 @@ footer {
       .contact {
          margin-bottom: 0;
       }
+   }
+}
+
+@media screen and (min-width: 1500px) {
+   .container {
+      padding: 70px 300px;
    }
 }

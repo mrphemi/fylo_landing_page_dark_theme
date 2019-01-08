@@ -79,14 +79,33 @@ p {
 
 .intro .illustration {
   width: 90%;
-  margin: 0 auto;
+  margin: 40px auto 0;
   display: block;
-  margin-top: 40px;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.curve {
+  margin-top: -100px;
+  background-color: #1c2431;
+}
+
+.curve img {
+  width: 100%;
+  height: 100%;
+}
+
+.curve .bg-curvy-mobile {
+  display: block;
+}
+
+.curve .bg-curvy-desktop {
+  display: none;
 }
 
 .about {
   text-align: center;
+  margin-top: -100px;
 }
 
 .about.container {
@@ -286,8 +305,36 @@ footer .social .fa-facebook-f {
   .btn {
     font-size: 16px;
   }
+  .nav .logo {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
   .testimonials.container {
     padding: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro .illustration {
+    margin: 40px auto;
+  }
+  .curve {
+    margin-top: -5px;
+  }
+  .about {
+    margin-top: -520px;
+  }
+  .about.container {
+    padding: 70px 200px;
+  }
+  .about h2 {
+    margin-bottom: 30px;
+  }
+  .about p {
+    padding: 0 80px;
+  }
+  .services.container {
+    padding: 70px 150px;
   }
 }
 
@@ -319,6 +366,15 @@ footer .social .fa-facebook-f {
   }
   .intro .illustration {
     width: 60%;
+  }
+  .curve .bg-curvy-mobile {
+    display: none;
+  }
+  .curve .bg-curvy-desktop {
+    display: block;
+  }
+  .about {
+    margin-top: -570px;
   }
   .about.container {
     padding: 70px 350px;
@@ -416,6 +472,12 @@ footer .social .fa-facebook-f {
   footer .info,
   footer .contact {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    padding: 70px 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */
