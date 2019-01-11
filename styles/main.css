@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+h1,
 h2,
 h3 {
   font-family: "Raleway", sans-serif;
@@ -112,7 +113,7 @@ p {
   padding-top: 0;
 }
 
-.about h2 {
+.about h1 {
   line-height: 32px;
 }
 
@@ -136,7 +137,7 @@ p {
   margin-bottom: 50px;
 }
 
-.extra h3 {
+.extra h2 {
   text-align: center;
 }
 
@@ -327,7 +328,7 @@ footer .social .fa-facebook-f {
   .about.container {
     padding: 70px 200px;
   }
-  .about h2 {
+  .about h1 {
     margin-bottom: 30px;
   }
   .about p {
@@ -379,7 +380,7 @@ footer .social .fa-facebook-f {
   .about.container {
     padding: 70px 350px;
   }
-  .about h2 {
+  .about h1 {
     font-size: 32px;
     line-height: 50px;
   }
@@ -420,7 +421,7 @@ footer .social .fa-facebook-f {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .extra .body h3 {
+  .extra .body h2 {
     text-align: left;
     padding-right: 30px;
     font-size: 32px;
@@ -443,6 +444,9 @@ footer .social .fa-facebook-f {
   .signup {
     width: 50%;
     margin-bottom: -150px;
+  }
+  .signup h2 {
+    font-size: 24px;
   }
   .signup .form {
     display: -ms-grid;

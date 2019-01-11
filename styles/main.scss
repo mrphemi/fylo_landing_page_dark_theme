@@ -25,6 +25,7 @@ body {
    font-family: "Open Sans", sans-serif;
 }
 
+h1,
 h2,
 h3 {
    font-family: "Raleway", sans-serif;
@@ -114,7 +115,7 @@ p {
       padding-top: 0;
    }
 
-   h2 {
+   h1 {
       line-height: 32px;
    }
    p {
@@ -139,7 +140,7 @@ p {
       margin: 0 auto;
       margin-bottom: 50px;
    }
-   h3 {
+   h2 {
       text-align: center;
    }
    .cto {
@@ -326,7 +327,7 @@ footer {
       &.container {
          padding: 70px 200px;
       }
-      h2 {
+      h1 {
          margin-bottom: 30px;
       }
       p {
@@ -387,7 +388,7 @@ footer {
       &.container {
          padding: 70px 350px;
       }
-      h2 {
+      h1 {
          font-size: 32px;
          line-height: 50px;
       }
@@ -423,7 +424,7 @@ footer {
       }
       .body {
          align-self: center;
-         h3 {
+         h2 {
             text-align: left;
             padding-right: 30px;
             font-size: 32px;
@@ -450,6 +451,9 @@ footer {
    .signup {
       width: 50%;
       margin-bottom: -150px;
+      h2 {
+         font-size: 24px;
+      }
       .form {
          display: grid;
          grid-template-columns: 70% 30%;
